@@ -99,14 +99,15 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* меню навігації
 .menu-link:hover,
 .menu-link:focus {
   color: var(--active-color);
-} */
+}
+.contact-list {
+  font-style: normal;
+}
 
 .contact-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -115,13 +116,18 @@ body {
 }
 
 .contact-item:hover,
-.contact-item:focus {
+.contact-item:focus,
+.contact-item:active {
   color: var(--active-color);
 }
 
-.contact-mail:active {
+/* .contact-mail:active {
   color: var(--active-color);
 }
+
+.contact-phone:active {
+  color: var(--active-color);
+} */
 /* =============== HEADER =============== */
 
 /* =============== HERO SECTION =============== */
@@ -152,7 +158,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.hero-button:active {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--button-hover-color);
 }
 /* =============== HERO SECTION =============== */
@@ -168,6 +175,13 @@ body {
   color: var(--secondary-text-color);
 }
 
+.portfolio-second-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
 .title-three {
   font-weight: 500;
   font-size: 20px;
@@ -195,6 +209,10 @@ body {
 /* =============== OUR TEAM =============== */
 .our-team {
   background-color: var(--light-section-color);
+}
+
+.our-team-list {
+  background-color: var(--body-background-color);
 }
 /* .our-team-list {
   display: flex;
